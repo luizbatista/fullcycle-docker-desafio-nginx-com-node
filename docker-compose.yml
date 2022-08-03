@@ -11,6 +11,7 @@ services:
     volumes: 
       - ./:/usr/src/app
     tty: true
+    entrypoint: sh -c "npm i && node index.js"
     depends_on: 
        - db
 
